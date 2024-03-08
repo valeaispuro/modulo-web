@@ -86,7 +86,6 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h1 class="Heading h1" style="color: #004d40;" >Instalar Node.js</h1>
         </div>
       </div>
     </div>
@@ -99,7 +98,7 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Pasos a seguir</h4>
+          <h1 class="Heading h1" style="color: #004d40;" >Instalar Node.js</h1>
           <p class="left-align light"> Pasos a seguir para instalar node: <br>
             1. Instalar Node.js en tu sistema. Puedes descargarlo desde este link <a href="https://nodejs.org/">https://nodejs.org/</a>. <br>
             2. Asegúrate que esté instalado con la versión correcta poniendo <strong> node -v node -v </strong>en tu terminal. <br>
@@ -117,7 +116,6 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h1 class="Heading h1 bold" style= "color: #004d40;">Servicios Web Node.js</h1>
         </div>
       </div>
     </div>
@@ -129,7 +127,7 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Pasos a seguir </h4>
+          <h1 class="Heading h1 bold" style= "color: #004d40;">Servicios Web Node.js</h1>
           <p class="left-align light">
             Pasos para poder consumir servicios web usando Node.js: <br>
             1. Instalar el módulo request, el cual nos permitirá realizar solicitudes, para instalarlo solo se debe escribir el siguiente comando en el código importamos la API Fetch: <strong>import fetch from “fetch”;</strong> <br>
@@ -184,7 +182,6 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h1 class="Heading h1 bold" style= "color: #004d40;">Framework- <br> Materialize</h1>
         </div>
       </div>
     </div>
@@ -197,7 +194,7 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Pasos a seguir </h4>
+          <h1 class="Heading h1 bold" style= "color: #004d40;">Framework- <br> Materialize</h1>
           <p class="left-align light"> Pasos a seguir ya que quieres usar un framework: <br>
             1. Una vez que ya tienes instalado Node.js, crea un archivo HTML en el directorio de tu proyecto. <br>
             2. Hay muchos frameworks con los que puedes trabajar, sin embargo en este tutorial vamos a utilizar Materialize con VS Code. <br>
@@ -220,7 +217,6 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h1 class="Heading h1 bold" style= "color: #004d40;">API- <br> Spotify</h1>
         </div>
       </div>
     </div>
@@ -233,7 +229,7 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Pasos a seguir </h4>
+          <h1 class="Heading h1 bold" style= "color: #004d40;">API- <br> Spotify</h1>
           <p class="left-align light">
             Cómo usar API de spotify: <br>
             1. Crea una cuenta en spotify developers:  <a href="https://developer.spotify.com/">https://developer.spotify.com/</a>. <br>
@@ -312,7 +308,6 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h1 class="Heading h1 bold" style= "color: #004d40;">Spotify y Node.js</h1>
         </div>
       </div>
     </div>
@@ -325,7 +320,7 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Pasos a seguir </h4>
+          <h1 class="Heading h1 bold" style= "color: #004d40;">Spotify y Node.js</h1>
           <p class="left-align light"> En este caso se obtiene el token directo en el código. <br>
             1. Crea un archivo <strong> .js </strong> <br>
             2. Agrega las siguientes librerias para que tu código pueda funcionar correctamente: <br>
@@ -375,24 +370,26 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Nuestro código </h4>
-          <p class="left-align light"> 1. Importamos los módulos http, querystring y url de Node.js para manejar solicitudes HTTP y URL. <br>
+          <h1 class="Heading h1 bold" style= "color: #004d40;">Nuestro código</h1>
+          <p class="left-align light"> Nuestro programa es un servidor HTTP que busca información sobre una canción en Spotify y luego utiliza OpenAI para recomendar canciones similares. <br>
+            1. Importamos los módulos http, querystring y url de Node.js para manejar solicitudes HTTP y URL. <br>
             2. Definimos la función search_track, esta función:<br>
-            <span style="margin-left: 20px;"<strong>1)</strong> Toma un token de acceso y una consulta de búsqueda como parámetros.</span> <br>
-            <span style="margin-left: 20px;"<strong>2)</strong> Construye la URL de la API de Spotify para realizar la búsqueda.</span> <br>
-            <span style="margin-left: 20px;"<strong>3)</strong> Realiza una solicitud GET a la URL utilizando el token de acceso para la autenticación.</span> <br>
-            <span style="margin-left: 20px;"<strong>4)</strong> Maneja la respuesta de la solicitud y la convierte a formato JSON. </span> <br>
-            <span style="margin-left: 20px;"<strong>5)</strong> Imprime los datos de la pista en la consola y devuelve los datos. </span> <br>
-            3. Creamos un servidor HTML en donde: <br>
-            <span style="margin-left: 20px;"<strong>1)</strong> Utilizamos http.createServer para crear un servidor HTTP.</span> <br>
-            <span style="margin-left: 20px;"<strong>2)</strong> Definimos un manejador de solicitudes que se ejecuta cada vez que se recibe una solicitud.</span> <br>
-            <span style="margin-left: 20px;"<strong>3)</strong> Dentro del manejador de solicitudes, enviamos una solicitud POST a la API de Spotify para obtener un token de acceso.</span><br>
-            <span style="margin-left: 20px;"<strong>4)</strong> Cuando recibimos el token de acceso, realizamos una búsqueda de la canción utilizando la función search_track.</span> <br>
-            <span style="margin-left: 20px;"<strong>5)</strong> Cuando obtenemos los resultados de la búsqueda, escribimos una respuesta HTTP con el contenido en formato JSON.</span> <br>
-            4. Utilizamos server.listen para hacer que el servidor escuche en el puerto 3000 y usamos la dirección de IP local '127.0.0.1'. <br>
-            <img src="/Users/vale/Desktop/Screen Shot 2024-03-07 at 16.00.46.png" alt="Unsplashed background img 1" style="max-width: 100%; height: auto;"> <br>
-            <img src="/Users/vale/Desktop/Screen Shot 2024-03-07 at 16.00.54.png" alt="Unsplashed background img 2" style="max-width: 70%; height: auto;"> <br>
-
+            <span style="margin-left: 20px;"<strong>1)</strong> Toma un token de autenticación y el nombre de una canción como entrada.</span> <br>
+            <span style="margin-left: 20px;"<strong>2)</strong> Utiliza estos datos para realizar una búsqueda de la canción en Spotify a través de su API.</span> <br>
+            <span style="margin-left: 20px;"<strong>3)</strong> </span> Luego devuelve los datos de la canción encontrada.<br>
+            3. Luego la función miFuncion: <br>
+            <span style="margin-left: 20px;"<strong>1)</strong> Toma el nombre de una canción como entrada.</span> <br>
+            <span style="margin-left: 20px;"<strong>2)</strong> Primero busca información sobre la canción en Spotify utilizando la función searchTrack.</span> <br>
+            <span style="margin-left: 20px;"<strong>3)</strong> Luego utiliza OpenAI para recomendar canciones similares al nombre de la canción que se dio.</span><br>
+            4. Luego creamos un servidor HTTP utilizando el módulo http de Node.js.<br>
+            5. Cuando se recibe una solicitud HTTP en el puerto 3000, el servidor llama a la función miFuncion con el nombre de una canción predefinida.<br>
+            6. Una vez que miFuncion ha completado su ejecución, el servidor envía las recomendaciones de canciones similares como respuesta al user.<br>
+            7. Utilizamos server.listen para hacer que el servidor escuche en el puerto 3000 y usamos la dirección de IP local '127.0.0.1'. <br>
+            <br> <strong> Código: </strong> <br>
+            <br> <img src="/Users/vale/Desktop/Screen Shot 2024-03-07 at 23.08.56.png" alt="Código img 1" style="max-width: 100%; height: auto;"> <br>
+            <img src="/Users/vale/Desktop/Screen Shot 2024-03-07 at 23.09.43.png" alt="Código img 2" style="max-width: 70%; height: auto;"> <br>
+            <img src="/Users/vale/Desktop/Screen Shot 2024-03-07 at 23.10.05.png" alt="Código img 3" style="max-width: 50%; height: auto;"> <br>
+            <img src="/Users/vale/Desktop/Screen Shot 2024-03-07 at 23.14.05.png" alt="Output img 1" style="max-width: 50%; height: auto;"> <br>
           </p>
         </div>
       </div>
